@@ -8,9 +8,7 @@
 
 body {
   width: 100%;
-  max-width: 1440px;
   margin-inline: auto;
-  padding: 0 5%;
   color: var(--text);
   background: #ffffff;
   font:
@@ -20,6 +18,14 @@ body {
 
 .section {
   padding-block: 60px;
+}
+
+.concept_container,
+.services_container,
+.introduction_container,
+.information_container {
+  max-width: 1440px;
+  margin-inline: auto;
 }
 
 .default_h2 {
@@ -65,8 +71,8 @@ body {
 
 .button_link {
   display: inline-flex;
-  min-width: 240px;
-  min-height: 64px;
+  width: 240px;
+  height: 64px;
   align-items: center;
   justify-content: center;
   padding: 8px 24px;
@@ -159,9 +165,9 @@ a:focus-visible {
 /* FV */
 .home_fv img {
   width: 100%;
-  height: clamp(360px, 40vw, 600px);
+  height: clamp(360px, 40vw, 640px);
   object-fit: cover;
-  object-position: center 70%;
+  object-position: center 50%;
 }
 
 /* CONCEPT */
@@ -188,10 +194,12 @@ a:focus-visible {
 }
 
 /* SERVICES */
+.section_services {
+  background: var(--pale-blue);
+}
+
 .services_container {
   padding: 64px clamp(24px, 5vw, 72px) 58px;
-  border-radius: 30px;
-  background: var(--pale-blue);
   text-align: center;
 }
 
@@ -278,6 +286,8 @@ a:focus-visible {
 }
 
 .footer_container {
+  max-width: 1440px;
+  margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(40px, 6vw, 80px);
