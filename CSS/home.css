@@ -1,0 +1,155 @@
+/* ホーム */
+.services_container,
+.introduction_container,
+.information_container {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+/* ファーストビュー */
+.home_fv img {
+  width: 100%;
+  height: clamp(360px, 40vw, 640px);
+  object-fit: cover;
+  object-position: center 50%;
+}
+
+/* 診療案内 */
+.section_services {
+  background: var(--pale-blue);
+}
+
+.services_container {
+  padding: 64px clamp(24px, 5vw, 72px) 58px;
+  text-align: center;
+}
+
+.services_list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.services_item img {
+  width: min(100%, 200px);
+  height: min(100%, 200px);
+  margin-inline: auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.services_item .default_h3 {
+  margin-top: 16px;
+}
+
+.services_container > .page_button a {
+  background: #ffffff;
+  color: var(--blue);
+}
+
+.services_container > .page_button a:hover {
+  background: var(--blue);
+  color: #ffffff;
+}
+
+/* 院長紹介 */
+.introduction-item {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  align-items: center top;
+  gap: clamp(24px, 6vw, 40px);
+}
+
+.introduction-image img {
+  width: min(100%, 400px);
+  height: min(100%, 400px);
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* ブログ・お知らせ */
+.information_item {
+  display: grid;
+  grid-template-columns: 120px 120px minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+  min-height: 80px;
+  padding: 16px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.information_date {
+  color: var(--text);
+  font-size: var(--default-caption);
+}
+
+.information_category {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: var(--default-caption);
+  font-weight: 500;
+  text-align: center;
+}
+
+.information_category-column {
+  background: #cfc17d;
+}
+
+.information_category-notice {
+  background: #b6c3aa;
+}
+
+/* レスポンシブ 作成中
+@media (max-width: 900px) {
+  .services_list {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .home_fv img {
+    height: clamp(260px, 70vw, 390px);
+  }
+  .introduction-item {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .services_container {
+    padding: 48px 20px;
+  }
+  .services_list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px 18px;
+    margin-top: 36px;
+  }
+  .services_item img {
+    width: min(100%, 150px);
+  }
+  .introduction-image {
+    max-width: 380px;
+    margin-inline: auto;
+  }
+  .introduction-text .default_h2 {
+    text-align: center;
+  }
+  .information_item {
+    grid-template-columns: auto 100px;
+    gap: 8px 16px;
+    padding: 16px 4px;
+  }
+  .information_item .default_p {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 390px) {
+  .services_container > .default_p br {
+    display: none;
+  }
+}
+*/

@@ -1,0 +1,157 @@
+/* 診療案内 */
+.service {
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* ページタイトル */
+.service .page_title {
+  position: relative;
+  display: grid;
+  min-height: clamp(240px, 25vw, 400px);
+  place-items: center;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.service .page_title_text {
+  position: absolute;
+  color: var(--blue);
+  font:
+    700 clamp(24px, 3vw, 40px)/1.5 "Zen Old Mincho",
+    serif;
+  letter-spacing: 0.12em;
+}
+
+.service .page_title img {
+  width: 100%;
+  height: clamp(220px, 25vw, 360px);
+  opacity: 0.2;
+  object-fit: cover;
+  object-position: center 80%;
+}
+
+/* 診療内容 */
+.service .service_section {
+  padding: clamp(64px, 8vw, 104px) clamp(20px, 5vw, 64px);
+}
+
+.service .service_container {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.service .service_lead,
+.service .service_note {
+  text-align: center;
+}
+
+.service .service_list {
+  display: grid;
+  gap: 40px;
+  margin-top: clamp(40px, 6vw, 64px);
+}
+
+.service .service_item {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(32px, 4vw, 72px);
+  padding: clamp(32px, 4vw, 48px);
+  background: var(--pale-blue);
+  border-radius: 24px;
+}
+
+.service .service_image {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.service .service_image img {
+  width: min(100%, 300px);
+  height: min(100%, 300px );
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.service .service_text h2 {
+  margin-bottom: 24px;
+  color: var(--blue);
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.service .service_text li {
+  font-size: clamp(12px, 1.2vw, 18px);
+  line-height: 1.6;
+}
+
+.service .service_text ul {
+  margin-top: 16px;
+  padding-left: 1.4em;
+  list-style: disc;
+}
+
+.service .service_note {
+  margin-top: clamp(40px, 6vw, 72px);
+}
+
+/* @media (max-width: 900px) {
+  .service .service_item {
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .service .page_title,
+  .service .page_title img {
+    min-height: 180px;
+    height: 180px;
+  }
+
+  .service .service_section {
+    padding: 52px 16px 72px;
+  }
+
+  .service .service_lead br,
+  .service .service_note br {
+    display: none;
+  }
+
+  .service .service_list {
+    gap: 24px;
+  }
+
+  .service .service_item {
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 24px;
+    padding: 28px 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .service .service_item {
+    grid-template-columns: 1fr;
+  }
+
+  .service .service_image {
+    width: min(68vw, 240px);
+    margin-inline: auto;
+  }
+
+  .service .service_text h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .service .page_title_text {
+    font-size: 22px;
+  }
+
+  .service .service_item {
+    padding-inline: 20px;
+  }
+} */

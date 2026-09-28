@@ -1,0 +1,193 @@
+/* スタッフ紹介 */
+.staff {
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* ページタイトル */
+.staff .page_title {
+  position: relative;
+  display: grid;
+  min-height: clamp(240px, 25vw, 400px);
+  place-items: center;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.staff .page_title_text {
+  position: absolute;
+  color: var(--blue);
+  font:
+    700 clamp(24px, 3vw, 40px)/1.5 "Zen Old Mincho",
+    serif;
+  letter-spacing: 0.12em;
+}
+
+.staff .page_title img {
+  width: 100%;
+  height: clamp(220px, 25vw, 360px);
+  opacity: 0.2;
+  object-fit: cover;
+  object-position: center 55%;
+}
+
+/* スタッフ一覧 */
+.staff .staff_section {
+  padding: clamp(64px, 8vw, 104px) clamp(20px, 5vw, 64px);
+}
+
+.staff .staff_container {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.staff .staff_lead {
+  text-align: center;
+}
+
+.staff .staff_item_left {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(40px, 7vw, 88px);
+  padding: clamp(52px, 7vw, 80px) 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.staff .staff_item_right {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  align-items: center;
+  gap: clamp(40px, 7vw, 88px);
+  padding: clamp(52px, 7vw, 80px) 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.staff .staff_item_right figure {
+  order: 2;
+}
+
+.staff .staff_item_right .staff_text {
+  order: 1;
+}
+
+.staff .staff_list > :last-child {
+  border-bottom: none;
+}
+
+.staff .staff_image {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.staff .staff_image img {
+  width: min(100%, 300px);
+  height: min(100%, 300px);
+  aspect-ratio: 1;
+}
+
+.staff .staff_text h2 {
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+.staff .staff_profile {
+  margin-top: 24px;
+}
+
+.staff .staff_profile > div {
+  display: flex;
+}
+
+.staff .staff_profile dt {
+  color: var(--text);
+  font-size: clamp(10px, 2.4vw, 16px);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+}
+
+.staff .staff_profile dd {
+  color: var(--text);
+  font-size: clamp(10px, 2.4vw, 16px);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+}
+
+.staff .staff_profile dt::after {
+  content: "：";
+}
+
+/* @media (max-width: 900px) {
+  .staff .staff_item_left {
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 40px;
+    padding-inline: 12px;
+  }
+
+  .staff .staff_item_right {
+    grid-template-columns: minmax(0, 1fr) 190px;
+    gap: 40px;
+    padding-inline: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .staff .page_title,
+  .staff .page_title img {
+    min-height: 180px;
+    height: 180px;
+  }
+
+  .staff .staff_section {
+    padding: 52px 20px 72px;
+  }
+
+  .staff .staff_lead br {
+    display: none;
+  }
+
+  .staff .staff_item_left {
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .staff .staff_item_right {
+    grid-template-columns: minmax(0, 1fr) 150px;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 520px) {
+  .staff .staff_item_left,
+  .staff .staff_item_right {
+    grid-template-columns: 1fr;
+  }
+
+  .staff .staff_item_left .staff_image,
+  .staff .staff_item_right .staff_image {
+    width: min(68vw, 240px);
+    margin-inline: auto;
+    order: 1;
+  }
+
+  .staff .staff_item_left .staff_text,
+  .staff .staff_item_right .staff_text {
+    order: 2;
+  }
+
+  .staff .staff_text h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .staff .page_title_text {
+    font-size: 22px;
+  }
+
+  .staff .staff_section {
+    padding-inline: 16px;
+  }
+} */
